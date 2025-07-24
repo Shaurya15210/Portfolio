@@ -1,6 +1,6 @@
 import React from "react";
 import { Button } from "@/components/ui/button";
-import { Mail, Phone, Instagram, Youtube, ArrowRight } from "lucide-react";
+import { Mail, Phone, Instagram, Youtube, Twitter, ArrowRight } from "lucide-react";
 import { motion } from "framer-motion";
 
 interface FooterSectionProps {
@@ -25,6 +25,7 @@ const FooterSection = ({
   socialLinks = [
     { platform: "Instagram", href: "https://www.instagram.com/zonex_designs/" },
     { platform: "Youtube", href: "https://www.youtube.com/@Zonex-15" },
+    { platform: "Twitter", href: "https://x.com/ZONEX_Designs" },
   ],
 }: FooterSectionProps) => {
   return (
@@ -98,6 +99,9 @@ const FooterSection = ({
                     break;
                   case "Youtube":
                     Icon = Youtube;
+                    break;
+                  case "Twitter":
+                    Icon = Twitter;
                     break;
                   default:
                     Icon = Instagram;
